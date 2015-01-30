@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /sushi/ecard/lesson2.html
+title: Lesson 2
+---
 # Lesson 2
 #### Three little words with text...
 

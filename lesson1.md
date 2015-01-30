@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /sushi/ecard/lesson1.html
+title: Lesson 1
+---
 # Lesson 1
 #### Setting the stage with backgrounds
 

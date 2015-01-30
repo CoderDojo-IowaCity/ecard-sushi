@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /sushi/ecard/lesson3.html
+title: Lesson 3
+---
 # Lesson 3
 #### Making moves with animation
 
