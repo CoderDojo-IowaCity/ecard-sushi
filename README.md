@@ -10,6 +10,9 @@ Start here: [Lesson 1](lesson1.md)
 
 -------
 
+#### Attributions
+Based largely on the [Animated eCards with HTML5](http://www.webdesignermag.co.uk/tutorials/animated-ecards-with-html5/1/) tutorial.
+
 #### Copyright notice
 
 \*Heart\*.png files modified from [Love_heart_glowing_bubble.svg](http://commons.wikimedia.org/wiki/File%3ALove_heart_glowing_bubble.svg) by Nevit Dilmen
