@@ -1,0 +1,53 @@
+# Lesson 1
+#### Setting the stage with backgrounds
+
+To begin, we need to create the skeleton (the "boilerplate") of our HTML5 file.  Create a file named "index.html" and add these lines:
+
+```html
+<html>
+   <head>
+       <title>Title</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+       <script type="text/javascript"></script>
+    </head>
+    <body>
+        <canvas id="greetings" width="600" height="400">I'm sorry, your browser can't display this eCard</canvas>
+    </body>
+</html>
+```
+
+Change the `<title>` element to "My Valentine's Card" and :eyes: open your file in a web browser.  (If you are using Brackets, click the 'Live Preview' button in the top right corner.)
+
+Not much to look at, huh?  (Unless you're using Internet Explorer, then you should see the error message!)  In Firefox, Chrome, or Safari you should see a blank page.  There's actually a `<canvas>` element that is invisible because it has nothing to draw.
+
+Let's fix that. We'll draw a background that is pink at the top and fades to white.  The HTML color code for white is '#ffffff' (see if you can find the code for pink below).  Between `<script type="text/javascript">` and `</script>` on line 5 add some Javascript code like this:
+
+```javascript
+    function init() {
+        var canvas = document.getElementById("greetings");
+        if (canvas.getContext){
+            var context = canvas.getContext('2d');
+            draw(context);
+        } else {
+            // canvas-unsupported code here
+            alert("Sorry, I can't display the card");
+        }
+    }
+
+    function draw(context) {
+        var lingrad = context.createLinearGradient(0,0,0,400);
+        lingrad.addColorStop(0, '#f57a86');
+        lingrad.addColorStop(1, '#ffffff');
+        context.fillStyle = lingrad;
+        context.fillRect (0, 0, 600, 400);
+    }
+
+    $(document).ready(function() {
+        init();
+    });
+```
+
+:eyes: Now refresh your page and boom - there's your background.
+:cherries: See if you can have the background fade from red on the right to purple on the left...
+
+Let's move on to [Lesson 2](lesson2.md).
