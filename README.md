@@ -1,3 +1,7 @@
+---
+title: Creating a Valentine's E-Card with "canvas"
+permalink: index.html
+---
 # E-card sushi
 This project will teach you how to use the HTML5 `<canvas>` element with CSS3 and JavaScript to create a Valentine's card that you can send to your sweetie!
 
@@ -5,13 +9,13 @@ This project will teach you how to use the HTML5 `<canvas>` element with CSS3 an
  - :cherries: you have encountered a CHALLENGE!  Experiment/play with the code to accomplish the task and earn a point!  (Don't worry if you get stuck - asking for help is part of coding.)
  - :eyes: time to open/refresh YOUR `index.html` file in a browser
 
-Start here: [Lesson 1](lesson1.md)
+Start here: [Lesson 1]({{site.baseurl}}{{lesson1.html}})
 
 
 -------
 
 #### Attributions
-Based largely on the [Animated eCards with HTML5](http://www.webdesignermag.co.uk/tutorials/animated-ecards-with-html5/1/) tutorial.
+Based largely on the [Animated eCards with HTML5](http://www.webdesignermag.co.uk/tutorials/animated-ecards-with-html5/) tutorial.
 
 #### Copyright notice
 
