@@ -5,3 +5,4 @@ defaults:
         type: "posts"
     values:
         layout: "default"
+        baseurl: "/ecard-sushi"

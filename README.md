@@ -9,7 +9,7 @@ This project will teach you how to use the HTML5 `<canvas>` element with CSS3 an
  - :cherries: you have encountered a CHALLENGE!  Experiment/play with the code to accomplish the task and earn a point!  (Don't worry if you get stuck - asking for help is part of coding.)
  - :eyes: time to open/refresh YOUR `index.html` file in a browser
 
-Start here: [Lesson 1]({{site.baseurl}}{{lesson1.html}})
+Start here: [Lesson 1]({% post_url 2015-02-01-lesson1 %})
 
 
 -------
