@@ -1,69 +1,19 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ecard-sushi by CoderDojo-IowaCity</title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Ecard-sushi</h1>
-        <p>CoderDojo Sushi project for HTML5/Javascript e-card</p>
+<div class="posts">
+  {% assign sorted_posts = site.posts | sort: 'title', 'last' %}
+  {% for post in sorted_posts %}
+    <article class="post">    
+      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-        <p class="view"><a href="https://github.com/CoderDojo-IowaCity/ecard-sushi">View the Project on GitHub <small>CoderDojo-IowaCity/ecard-sushi</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/CoderDojo-IowaCity/ecard-sushi/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/CoderDojo-IowaCity/ecard-sushi/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/CoderDojo-IowaCity/ecard-sushi">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="e-card-sushi" class="anchor" href="#e-card-sushi" aria-hidden="true"><span class="octicon octicon-link"></span></a>E-card sushi</h1>
-
-<p>This project will teach you how to use the HTML5 <code>&lt;canvas&gt;</code> element with CSS3 and JavaScript to create a Valentine's card that you can send to your sweetie!</p>
-
-<p><img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle"> Icon key</p>
-
-<ul>
-<li>
-<img class="emoji" title=":cherries:" alt=":cherries:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f352.png" height="20" width="20" align="absmiddle"> you have encountered a CHALLENGE!  Experiment/play with the code to accomplish the task and earn a point!  (Don't worry if you get stuck - asking for help is part of coding.)</li>
-<li>
-<img class="emoji" title=":eyes:" alt=":eyes:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f440.png" height="20" width="20" align="absmiddle"> time to open/refresh YOUR <code>index.html</code> file in a browser</li>
-</ul>
-
-<p>Start here: <a href="lesson1.md">Lesson 1</a></p>
-
-<hr>
-
-<h4>
-<a id="attributions" class="anchor" href="#attributions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attributions</h4>
-
-<p>Based largely on the <a href="http://www.webdesignermag.co.uk/tutorials/animated-ecards-with-html5/1/">Animated eCards with HTML5</a> tutorial.</p>
-
-<h4>
-<a id="copyright-notice" class="anchor" href="#copyright-notice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copyright notice</h4>
-
-<p>*Heart*.png files modified from <a href="http://commons.wikimedia.org/wiki/File%3ALove_heart_glowing_bubble.svg">Love_heart_glowing_bubble.svg</a> by Nevit Dilmen</p>
-
-<p>CC BY-SA 3.0 (<a href="http://creativecommons.org/licenses/by-sa/3.0">http://creativecommons.org/licenses/by-sa/3.0</a>) or GFDL (<a href="http://www.gnu.org/copyleft/fdl.html">http://www.gnu.org/copyleft/fdl.html</a>), via Wikimedia Commons</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/CoderDojo-IowaCity">CoderDojo-IowaCity</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+      <div class="entry">
+        {{ post.content | truncatewords:40}}
+      </div>
+      
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
